@@ -1,14 +1,16 @@
 
 <html>
 <head>
+	<meta charset"utf-8">
 	<title>Calculadora</title>
+	<script SRC="Calculadora.js"></script>
+	<LINK href='Calculadora.css' type=text/css rel=stylesheet>
 </head>
 
-<LINK href='Calculadora.css' type=text/css rel=stylesheet>
+
+
 
 <body>
-
-<script SRC="Calculadora.js"></script>
 
 <div class="calculadora"
 <form action="#" name="calculadora" id="calculadora">
@@ -33,16 +35,16 @@
 <input type="button" value="%" />
 </p>
 <p>
-<input type="button" value="1" />
-<input type="button" value="2" />
-<input type="button" value="3" />
+<input type="button" id="btn_1" value="1"  onclick="numeros(1)" />
+<input type="button" id="btn_2"	value="2"  onclick="numeros(2)" />
+<input type="button" id="btn_3" value="3"  onclick="numeros(3)"/>
 <input type="button" value="-" />
 <input type="button" value="x^2" />
 </p>
 <p>
-<input type="button" value="0" />
+<input type="button" value="0" onclick="numeros(0)" />
 <input type="button" value="sen" />
-<input type="button" value="cos" />
+<input type="button" value="cos"/>
 <input type="button" value="+" />
 <input type="button" value="="/>
 </p>
