@@ -12,8 +12,8 @@
 
 <div class="calculadora"
 <form action="#" name="calculadora" id="calculadora">
-<p id="textoPantalla">0</p>
-<p id="textoPantalla2"></p>
+<p id="textoPantalla"></p>
+
 
 <p>
 <input type="button" class="largo" value="Retr" onclick="retro()"   />
@@ -21,39 +21,39 @@
 </p>
 
 <p>
-<input type="button" value="7" onclick="numero(7)" />
-<input type="button" value="8" onclick="numero('8')" />
-<input type="button" value="9" onclick="numero('9')" />
-<input type="button" value="/" onclick="operar('/')"  />
+<input type="button" value="7" onclick="concatenar('7')" />
+<input type="button" value="8" onclick="concatenar('8')" />
+<input type="button" value="9" onclick="concatenar('9')" />
+<input type="button" value="/" onclick="concatenar('/')"  />
 <input type="button" class="funesp" value="Raiz" onclick="raizc()" />
 </p>
 
 <p>
-<input type="button" value="4" onclick="numero('4')" />
-<input type="button" value="5" onclick="numero('5')" />
-<input type="button" value="6" onclick="numero('6')" />
-<input type="button" value="*" onclick="operar('*')" />
+<input type="button" value="4" onclick="concatenar('4')" />
+<input type="button" value="5" onclick="concatenar('5')" />
+<input type="button" value="6" onclick="concatenar('6')" />
+<input type="button" value="*" onclick="concatenar('*')" />
 <input type="button" value="%" onclick="porcent()" />
 </p>
 
 <p>
-<input type="button" value="1" onclick="numero('1')" />
-<input type="button" value="2" onclick="numero('2')" />
-<input type="button" value="3" onclick="numero('3')" />
-<input type="button" value="-" onclick="operar('-')" />
+<input type="button" value="1" onclick="concatenar('1')" />
+<input type="button" value="2" onclick="concatenar('2')" />
+<input type="button" value="3" onclick="concatenar('3')" />
+<input type="button" value="-" onclick="concatenar('-')" />
 <input type="button" class="funesp" value="X^2" onclick="potencia()" />
 </p>
 
 <p>
-<input type="button" value="0" onclick="numero('0')" />
-<input type="button" value="." onclick="numero('.')" />
+<input type="button" value="0" onclick="concatenar('0')" />
+<input type="button" value="." onclick="concatenar('.')" />
 <input type="button" class="funesp" value="π" onclick="pi()" />
-<input type="button" value="+" onclick="operar('+')" />
-<input type="button" value="=" onclick="operar('=')" />
+<input type="button" value="+" onclick="concatenar('+')" />
+<input type="button" value="=" onclick="igualar('=')" />
 </p>
 
 <p>
-<input type="button" class="funesp" value="SenX" onclick="sen()" />
+<input type="button" class="funesp" value="SenX" onclick="concatenar()" />
 <input type="button" class="funesp" value="CosX" onclick="cos()" />
 <input type="button" class="funesp" value="TanX" onclick="tan()" />
 <input type="button" class="funesp" value="ArctgX" onclick="arctg()" />
