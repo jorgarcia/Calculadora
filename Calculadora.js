@@ -4,6 +4,8 @@ pantalla=document.getElementById("textoPantalla"); //elemento pantalla de salida
 x="0"; //guardar número en pantalla
 xi=1; //iniciar número en pantalla: 1=si; 0=no;
 coma=0; //estado coma decimal 0=no, 1=si;
+ni=0; //número oculto o en espera.
+op="no"; //operación en curso; "no" =  sin operación.
 
 function numero(xx) { //recoge el número pulsado en el argumento.
          if (x=="0" || xi==1  ) { // inicializar un número, 
@@ -31,3 +33,23 @@ function numero(xx) { //recoge el número pulsado en el argumento.
             }
             xi=0 //el número está iniciado y podemos ampliarlo.
          }
+
+function operar(s) {
+         ni=x //ponemos el 1º número en "numero en espera" para poder escribir el segundo.
+         op=s; //guardamos tipo de operación.
+         xi=1; //inicializar pantalla.
+         }  
+
+function igualar() {
+         if (op=="no") { //no hay ninguna operación pendiente.
+            pantalla.innerHTML=x;   //mostramos el mismo número   
+            }
+         else { //con operación pendiente resolvemos
+            sl=ni+op+x; // escribimos la operación en una cadena
+            sol=eval(sl) //convertimos la cadena a código y resolvemos
+            pantalla.innerHTML=sol //mostramos la solución
+            x=sol; //guardamos la solución
+            op="no"; //ya no hay operaciones pendientes
+            xi=1; //se puede reiniciar la pantalla.
+            }
+        }
