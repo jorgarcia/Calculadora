@@ -1,5 +1,5 @@
 /*aspectos generales: bordes y color de fondo de calculadora*/
-.calculadora { border: 3px black ridge; width: 250px;text-align: center;
+.calculadora {border: 6px black ridge; width: 250px;text-align: center;  
                background-color: #E0FFFF; }
 
 /*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
