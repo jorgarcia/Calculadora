@@ -13,6 +13,7 @@
 <div class="calculadora"
 <form action="#" name="calculadora" id="calculadora">
 <p id="textoPantalla">0</p>
+<p id="textoPantalla2"></p>
 
 <p>
 <input type="button" class="largo" value="Retr" onclick="retro()"   />
@@ -48,14 +49,16 @@
 <input type="button" value="." onclick="numero('.')" />
 <input type="button" class="funesp" value="π" onclick="pi()" />
 <input type="button" value="+" onclick="operar('+')" />
-<input type="button" value="=" onclick="igualar()" />
+<input type="button" value="=" onclick="operar('=')" />
 </p>
 
 <p>
 <input type="button" class="funesp" value="Sen" onclick="sen()" />
 <input type="button" class="funesp" value="Cos" onclick="cos()" />
 <input type="button" class="funesp" value="Tan" onclick="tan()" />
-<input type="button" class="funesp" value="Ctg" onclick="ctg()" />
+<input type="button" class="funesp" value="Arctg" onclick="arctg()" />
+
+
 </p>
 
 </form>

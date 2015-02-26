@@ -8,9 +8,14 @@
                  background-color: white; font-family: "courier new"; 
                  overflow: hidden;}
 
+#textoPantalla2 { width: 100px; border: 2px orange solid; text-align: right; 
+                 position: relative; left: 107px;  padding: 5px 5px;
+                 background-color: white; font-family: "courier new"; 
+                 overflow: hidden;}
+
 /*botones normales: anchura y margen*/
 .calculadora [type=button] { width: 35px; padding: 0;  }
 /*botones especiales*/
 .calculadora input.largo { color: red; width: 60px; }
 
-.calculadora input.funesp {color: red; width: 30px; }
+.calculadora input.funesp {color: red; width: 35px; }
