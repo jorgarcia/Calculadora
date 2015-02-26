@@ -54,3 +54,49 @@ function igualar() {
             xi=1; //se puede reiniciar la pantalla.
             }
         }
+
+function raizc() {
+         x=Math.sqrt(x) //resolver raíz cuadrada.
+         pantalla.innerHTML=x; //mostrar en pantalla resultado
+         op="no"; //quitar operaciones pendientes.
+         xi=1; //se puede reiniciar la pantalla 
+         }
+
+function porcent() { 
+         x=x/100 //dividir por 100 el número
+         pantalla.innerHTML=x; //mostrar en pantalla
+         igualar() //resolver y mostrar operaciones pendientes
+         xi=1 //reiniciar la pantalla
+         }
+
+
+function retro(){ //Borrar sólo el último número escrito.
+         cifras=x.length; //hayar número de caracteres en pantalla
+         br=x.substr(cifras-1,cifras) //info del último caracter
+         x=x.substr(0,cifras-1) //quitar el ultimo caracter
+         if (x=="") {x="0";} //si ya no quedan caracteres, pondremos el 0
+         if (br==".") {coma=0;} //Si hemos quitado la coma, se permite escribirla de nuevo.
+         pantalla.innerHTML=x; //mostrar resultado en pantalla  
+         }
+
+function borradoTotal() {
+         pantalla.innerHTML=0; //poner pantalla a 0
+         x="0"; //reiniciar número en pantalla
+         coma=0; //reiniciar estado coma decimal 
+         ni=0 //indicador de número oculto a 0;
+         op="no" //borrar operación en curso.
+         }
+
+function pi() {
+         x= 3.14159265 //resolver el seno 
+         pantalla.innerHTML=x; //mostrar en pantalla resultado
+         op="no"; //quitar operaciones pendientes.
+         xi=1; //se puede reiniciar la pantalla 
+         }
+
+function sen() {
+         x=Math.sin(x) * (-1)//resolver el seno 
+         pantalla.innerHTML=x; //mostrar en pantalla resultado
+         op="no"; //quitar operaciones pendientes.
+         xi=1; //se puede reiniciar la pantalla 
+         }
