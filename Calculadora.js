@@ -1,7 +1,18 @@
 function concatenar (ope){ 
 
-   {
+    {
+
       pantalla=document.getElementById("textoPantalla").innerHTML = document.getElementById ("textoPantalla").innerHTML+ope; 
+
+      /*switch ()*/
+      /*case 1:
+      
+      break;
+
+      case 2
+      pantalla=document.getElementById("textoPantalla").innerHTML = document.getElementById ("textoPantalla").innerHTML + ope + Math.sin(document.getElementById("textoPantalla").innerHTML);
+      default; 
+      break;*/
    }
 }
 
@@ -24,29 +35,12 @@ function raizc() {
          }
 
 function porcent() { 
+         x= document.getElementById("textoPantalla").innerHTML;
          x=x/100 //dividir por 100 el número
-         pantalla.innerHTML=x; //mostrar en pantalla
-         pantalla2.innerHTML= "%"; //mostrar en pantalla la operacion
-         igualar() //resolver y mostrar operaciones pendientes
-         xi=1 //reiniciar la pantalla
-         }
-
-
-function retro(){ //Borrar sólo el último número escrito.
-         x=document.getElementById("textoPantalla").innerHTML
-         cifras=x.length; //hayar número de caracteres en pantalla
-         br=x.substr(cifras-1,cifras) //info del último caracter
-         x=x.substr(0,cifras-1) //quitar el ultimo caracter
-         if (x=="") {x="0";} //si ya no quedan caracteres, pondremos el 0
-         if (br==".") {coma=0;} //Si hemos quitado la coma, se permite escribirla de nuevo.
-         pantalla=document.getElementById("textoPantalla").innerHTML = document.getElementById ("textoPantalla").innerHTML = x; 
+         pantalla=document.getElementById("textoPantalla").innerHTML = document.getElementById ("textoPantalla").innerHTML = x;
          
          }
 
-function borradoTotal() {
-          pantalla=document.getElementById("textoPantalla").innerHTML = document.getElementById ("textoPantalla").innerHTML = "";
-        
-         }
 
 function pi() {
          x= 3.14159265 //resolver el seno 
@@ -96,6 +90,23 @@ function potencia() {
          xi=1; //se puede reiniciar la pantalla 
          }
 
+
+
+function retro(){ //Borrar sólo el último número escrito.
+         x=document.getElementById("textoPantalla").innerHTML
+         cifras=x.length; //hayar número de caracteres en pantalla
+         br=x.substr(cifras-1,cifras) //info del último caracter
+         x=x.substr(0,cifras-1) //quitar el ultimo caracter
+         if (x=="") {x="0";} //si ya no quedan caracteres, pondremos el 0
+         if (br==".") {coma=0;} //Si hemos quitado la coma, se permite escribirla de nuevo.
+         pantalla=document.getElementById("textoPantalla").innerHTML = document.getElementById ("textoPantalla").innerHTML = x; 
+         
+         }
+
+function borradoTotal() {
+          pantalla=document.getElementById("textoPantalla").innerHTML = document.getElementById ("textoPantalla").innerHTML = "";
+        
+         }
 
 
 function teclado (elEvento) { 
