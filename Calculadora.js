@@ -35,6 +35,7 @@ function numero(xx) { //recoge el número pulsado en el argumento.
          }
 
 function operar(s) {
+         igualar(); //si hay operaciones pendientes se realizan primero
          ni=x //ponemos el 1º número en "numero en espera" para poder escribir el segundo.
          op=s; //guardamos tipo de operación.
          xi=1; //inicializar pantalla.

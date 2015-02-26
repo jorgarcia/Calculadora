@@ -1,9 +1,9 @@
 /*aspectos generales: bordes y color de fondo de calculadora*/
-.calculadora { border: 3px blue ridge; width: 250px;text-align: center;
-               background-color: #f6f8d8; }
+.calculadora { border: 3px black ridge; width: 250px;text-align: center;
+               background-color: #E0FFFF; }
 
 /*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
-#textoPantalla { width: 185px; border: 2px black solid; text-align: right; 
+#textoPantalla { width: 185px; border: 2px green solid; text-align: right; 
                  position: relative; left: 23px;  padding: 0px 5px;
                  background-color: white; font-family: "courier new"; 
                  overflow: hidden;}
@@ -12,3 +12,5 @@
 .calculadora [type=button] { width: 35px; padding: 0;  }
 /*botones especiales*/
 .calculadora input.largo { color: red; width: 60px; }
+
+.calculadora input.funesp {color: red; width: 30px; }
