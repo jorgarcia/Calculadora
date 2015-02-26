@@ -33,6 +33,7 @@ function porcent() {
 
 
 function retro(){ //Borrar sólo el último número escrito.
+         x=document.getElementById("textoPantalla").innerHTML
          cifras=x.length; //hayar número de caracteres en pantalla
          br=x.substr(cifras-1,cifras) //info del último caracter
          x=x.substr(0,cifras-1) //quitar el ultimo caracter
